@@ -88,6 +88,7 @@ def eval_result():
         capture_output=True,
         text=True
     )
+    print(result);
 
     if result.returncode != 0:
         result_text = "Network error: " + result.stderr
